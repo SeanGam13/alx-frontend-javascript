@@ -1,0 +1,16 @@
+export function getTaskDescription() {
+  const taskDescription = 'I prefer const when possible.';
+  return taskDescription;
+}
+
+export function getFallbackMessage() {
+  return 'But sometimes using let is necessary.';
+}
+
+export function getTaskSummary() {
+  let taskSummary = 'For instance, when ';
+  taskSummary += 'the value of a variable needs to be updated.';
+  taskSummary += ' ' + getFallbackMessage();
+
+  return taskSummary;
+}
